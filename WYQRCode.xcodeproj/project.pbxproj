@@ -15,6 +15,11 @@
 		89C190051D9BA04900271343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C190031D9BA04900271343 /* LaunchScreen.storyboard */; };
 		89C190101D9BA04900271343 /* WYQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C1900F1D9BA04900271343 /* WYQRCodeTests.m */; };
 		89C1901B1D9BA04900271343 /* WYQRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C1901A1D9BA04900271343 /* WYQRCodeUITests.m */; };
+		89C1902A1D9BA19D00271343 /* WYQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C190291D9BA19D00271343 /* WYQRCodeScanViewController.m */; };
+		89C1902E1D9BA25C00271343 /* WYQRScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C1902D1D9BA25C00271343 /* WYQRScanView.m */; };
+		89C190311D9BA27200271343 /* WYQRBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C190301D9BA27200271343 /* WYQRBackView.m */; };
+		89C190351D9BA99F00271343 /* WYWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C190331D9BA99F00271343 /* WYWebViewController.m */; };
+		89C190361D9BA99F00271343 /* WYWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C190341D9BA99F00271343 /* WYWebViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		89C190161D9BA04900271343 /* WYQRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WYQRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C1901A1D9BA04900271343 /* WYQRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WYQRCodeUITests.m; sourceTree = "<group>"; };
 		89C1901C1D9BA04900271343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C190281D9BA19D00271343 /* WYQRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQRCodeScanViewController.h; sourceTree = "<group>"; };
+		89C190291D9BA19D00271343 /* WYQRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQRCodeScanViewController.m; sourceTree = "<group>"; };
+		89C1902C1D9BA25C00271343 /* WYQRScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQRScanView.h; sourceTree = "<group>"; };
+		89C1902D1D9BA25C00271343 /* WYQRScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQRScanView.m; sourceTree = "<group>"; };
+		89C1902F1D9BA27200271343 /* WYQRBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYQRBackView.h; sourceTree = "<group>"; };
+		89C190301D9BA27200271343 /* WYQRBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYQRBackView.m; sourceTree = "<group>"; };
+		89C190321D9BA99F00271343 /* WYWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYWebViewController.h; sourceTree = "<group>"; };
+		89C190331D9BA99F00271343 /* WYWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYWebViewController.m; sourceTree = "<group>"; };
+		89C190341D9BA99F00271343 /* WYWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WYWebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,10 @@
 				89C18FF91D9BA04900271343 /* AppDelegate.m */,
 				89C18FFB1D9BA04900271343 /* ViewController.h */,
 				89C18FFC1D9BA04900271343 /* ViewController.m */,
+				89C190321D9BA99F00271343 /* WYWebViewController.h */,
+				89C190331D9BA99F00271343 /* WYWebViewController.m */,
+				89C190341D9BA99F00271343 /* WYWebViewController.xib */,
+				89C1902B1D9BA23100271343 /* QRCode */,
 				89C18FFE1D9BA04900271343 /* Main.storyboard */,
 				89C190011D9BA04900271343 /* Assets.xcassets */,
 				89C190031D9BA04900271343 /* LaunchScreen.storyboard */,
@@ -138,6 +156,19 @@
 				89C1901C1D9BA04900271343 /* Info.plist */,
 			);
 			path = WYQRCodeUITests;
+			sourceTree = "<group>";
+		};
+		89C1902B1D9BA23100271343 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				89C190281D9BA19D00271343 /* WYQRCodeScanViewController.h */,
+				89C190291D9BA19D00271343 /* WYQRCodeScanViewController.m */,
+				89C1902C1D9BA25C00271343 /* WYQRScanView.h */,
+				89C1902D1D9BA25C00271343 /* WYQRScanView.m */,
+				89C1902F1D9BA27200271343 /* WYQRBackView.h */,
+				89C190301D9BA27200271343 /* WYQRBackView.m */,
+			);
+			name = QRCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C190051D9BA04900271343 /* LaunchScreen.storyboard in Resources */,
+				89C190361D9BA99F00271343 /* WYWebViewController.xib in Resources */,
 				89C190021D9BA04900271343 /* Assets.xcassets in Resources */,
 				89C190001D9BA04900271343 /* Main.storyboard in Resources */,
 			);
@@ -277,7 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C18FFD1D9BA04900271343 /* ViewController.m in Sources */,
+				89C1902E1D9BA25C00271343 /* WYQRScanView.m in Sources */,
+				89C1902A1D9BA19D00271343 /* WYQRCodeScanViewController.m in Sources */,
+				89C190351D9BA99F00271343 /* WYWebViewController.m in Sources */,
 				89C18FFA1D9BA04900271343 /* AppDelegate.m in Sources */,
+				89C190311D9BA27200271343 /* WYQRBackView.m in Sources */,
 				89C18FF71D9BA04900271343 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
